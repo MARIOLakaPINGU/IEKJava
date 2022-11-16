@@ -12,14 +12,15 @@ public class MATHIMA1 {
         public static int age;
         public static char gender;
         public static double salary;
-    
+        
+        static public Scanner console = new Scanner(System.in);
     
     public static void main(String[] args) {
         
         
         
         
-        Scanner console = new Scanner(System.in);
+        
         
         System.out.println("Enter name: ");
         
@@ -40,7 +41,11 @@ public class MATHIMA1 {
         System.out.println("Enter salary: ");
         salary = console.nextDouble();
         
-        employeeStat();
+        getAge(); // kalei thn function
+        getSalary(); // kalei thn function
+        
+        System.out.println(getAge()); //kanei print thn function
+        System.out.println(getSalary()); //kanei print thn function 
         
         
     }
@@ -52,6 +57,22 @@ public class MATHIMA1 {
         System.out.println("Gender: "+ gender);
         System.out.println("Salary: " + salary + "€");
     }
+    
+    
+    static int getAge(){
+        
+        return(age);
+        
+    }
+    
+    static double getSalary(){
+        
+        return (salary);
+    }
+    
+    
+    
+   
 }
 
 
