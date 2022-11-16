@@ -7,15 +7,16 @@ import java.util.Scanner;
 
 public class MATHIMA1 {
     
+        public static String name;
+        public static String lastName;
+        public static int age;
+        public static char gender;
+        public static double salary;
     
     
     public static void main(String[] args) {
         
-        String name;
-        String lastName;
-        int age;
-        char gender;
-        double salary;
+        
         
         
         Scanner console = new Scanner(System.in);
@@ -39,13 +40,17 @@ public class MATHIMA1 {
         System.out.println("Enter salary: ");
         salary = console.nextDouble();
         
-        System.out.println("Name: " + name +" Lastname: " + lastName + " Age: " + age + " Gender: "+ gender + " Salary: " + salary);
+        employeeStat();
         
         
-        
-        
-        
-        
+    }
+    
+    static void employeeStat(){
+        System.out.println("Name: " + name );
+        System.out.println("Lastname: " + lastName );
+        System.out.println("Age: " + age );
+        System.out.println("Gender: "+ gender);
+        System.out.println("Salary: " + salary + "€");
     }
 }
 
