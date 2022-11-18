@@ -18,10 +18,8 @@ public class MATHIMA1 {
     
     public static void main(String[] args) {
         
-        int x = 123;
-        System.out.println(x);
-        
-        
+        Employee emp1 = new Employee("kostas", 'm');
+        Employee emp2 = new Employee("Mariola",'f');
         
         
         System.out.println("Enter name: ");
