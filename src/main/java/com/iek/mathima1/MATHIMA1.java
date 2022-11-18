@@ -12,7 +12,8 @@ public class MATHIMA1 {
         public static int age;
         public static char gender;
         public static double salary;
-        
+        public static boolean adult;
+        public static boolean female;
         static public Scanner console = new Scanner(System.in);
     
     public static void main(String[] args) {
@@ -66,12 +67,37 @@ public class MATHIMA1 {
         
     }
     
+    static boolean getFemale(){
+        if (gender == 'F'){
+            female = true;
+        }else{
+            female = false;
+        }
+        return female;
+    }
+    
+    static boolean getAdult(){
+        if(getAge()>18){
+            adult = true;
+            
+        }else{
+            adult = false;
+        }
+        return adult;
+    }
+    
     static double getSalary(){
         
         return (salary);
     }
     
+    static void setSalary(double x){
+        salary = x;
+    }
     
+    static void getAge(int y){
+        age = y;
+    }
     
    
 }
