@@ -11,13 +11,13 @@ public class Employee {
     
     
     
-    public employee(String x , char y){
+    public void employee(String x , char y){
         
         name = x;
         gender = y;   
     }
     
-    public void employeeInfo(Employee x, ){
+    public void employeeInfo(Employee x ){
         
         System.out.println("To onoma tou" +x.name+"einai"+x.gender);
     }
