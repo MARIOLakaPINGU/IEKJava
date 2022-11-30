@@ -20,6 +20,7 @@ public class MATHIMA1 {
         
         Employee emp1 = new Employee("kostas", 'm');
         Employee emp2 = new Employee("Mariola",'f');
+        Employee emp3 = new Employee("Giorgos",'m');
         
         
         System.out.println("Enter name: ");
